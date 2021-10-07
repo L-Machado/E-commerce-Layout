@@ -1,0 +1,38 @@
+body{
+    min-width: 372px;
+}
+p{
+    text-align: justify;
+}
+#margin_login{
+    margin-top: 5%;
+}
+#margem_d{
+    margin-right: 10px;
+}
+.img_tamanho{
+    width: 20%;
+    
+}
+#sublinhar{
+    text-decoration: underline;
+}
+.branco{
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+#margem_b{
+    margin-bottom: 20px;
+}
+#margem_t{
+    margin-top: 20px;
+}
+#corzinha{
+    color: #575553;
+}
+#prochao{
+    margin-bottom: 10%;
+}
+#margem_b2{
+    margin-bottom: 150px;
+}

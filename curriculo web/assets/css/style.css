@@ -1,0 +1,49 @@
+.foto-de-perfil{
+	border-radius: 15%;
+	max-width: 300px;
+}
+body{
+	background-color: #343A40;
+}
+.logofb{
+	border-radius: 100%;
+	max-width: 60px;
+	vertical-align: -63px;
+	margin-bottom: 15px;
+}
+.logott{
+	border-radius: 100%;
+	max-width: 60px;
+	vertical-align: -63px;
+	margin-left: 25px;
+	margin-bottom: 15px;
+}
+.logored{
+	border-radius: 100%;
+	max-width: 60px;
+	vertical-align: -63px;
+	margin-left: 25px;
+	margin-bottom: 15px;
+}
+.logogt{
+	border-radius: 100%;
+	max-width: 60px;
+	vertical-align: -63px;
+	margin-left: 25px;
+	margin-bottom: 15px;
+}
+a:hover {
+  color: white;
+}
+.margem_texto{
+	margin-left: 43px;
+}
+.justificar{
+	text-align: justify;
+}
+.zoom:hover{
+	overflow: hidden;
+	-moz-transition:  all 0.1s;
+	transition: all 0.1s;
+	transform: scale(1.2);
+}

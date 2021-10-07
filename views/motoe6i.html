@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>XD Store</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Importando os icones da guia (favicon)-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/src/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/src/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/src/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/src/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/src/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/src/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/src/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/src/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/rc/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!--CSS de baiano-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-3 mb-5 ">
+            <div class="container">
+                <a class="navbar-brand" href="/views/index.html">XD Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="/views/index.html">
+                                <button type="button" class="btn btn-dark" href="/views/index.html"> Home </button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Modal para contato -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#contatoModal"> Contato </button>
+                            <div class="modal fade" id="contatoModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Fale conosco </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="post">
+                                                <label>
+                                                    Digite seu nome:
+                                                </label>
+                                                <div class="mb-2-sm">
+                                                    <input type="text" class="form-control" id="nome">
+                                                </div>
+                                                <label>
+                                                    Digite seu e-mail:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <input type="email" class="form-control" id="email">
+                                                </div>
+                                                <label>
+                                                    CPF ou CNPJ:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <input type="text" class="form-control" id="email">
+                                                </div>
+                                                <label>
+                                                    Como podemos te ajudar:
+                                                </label>
+                                                <select class="form-select form-select mb-3">
+                                                    <option selected>Selecione uma opção</option>
+                                                    <option value="1">Cadastro</option>
+                                                    <option value="2">Cancelamento</option>
+                                                    <option value="3">Entrega</option>
+                                                    <option value="4">Paceiro XD</option>
+                                                    <option value="5">Quero de casamento</option>
+                                                </select>
+                                                <label>
+                                                    Digite sua mensagem:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <textarea class="form-control" id="mensagem" rows="5"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Nos ajude a entender o
+                                                        problema:</label>
+                                                    <input class="form-control" type="file" id="formFile" encru>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                            <button type="submit" class="btn btn-success">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="align-sel-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="cadastro.html">
+                                    <button type="button" class="btn btn-dark" href="/"> Cadastro </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html">
+                                    <button type="button" class="btn btn-dark" href="/"> Login </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="carrinho.html">
+                                    <button type="button" class="btn btn-dark bi-cart" href="/"></button>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <main id="margem_b2">
+            <div class="container">
+                <h2>Smartphone Motorola Moto E6i 32GB Pink - 4G 2GB RAM Tela 6,1” Câm. Dupla + Selfie 5MP</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img src="/src/imagens/produtos/009.jpg" class="rounded float-start">
+                    </div>
+                    <div class="col-lg-4 ">
+                        <h3>Descrição</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ex porro quasi rerum
+                            nobis assumenda, harum saepe libero voluptatum perspiciatis nulla fugit quas, voluptates
+                            nemo id provident nostrum totam. Iusto?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae itaque culpa,
+                            cupiditate laudantium amet molestias quo, labore quod dolores repellendus reprehenderit
+                            harum a! Quis aperiam aut eveniet inventore, minus consequatur!
+                        </p>
+                        <p>
+                            de R$ 1.099,00
+                        </p>
+                        <p>
+                            por <b>R$809,10</b> à vista(10% de desconto)
+                        </p>
+                        <p id="sublinhar">
+                            Mais formas de pagamento
+                        </p>
+                        <p id="sublinhar">
+                            Incluir garantia estendida e proteção roubo e furto
+                        </p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-dark" type="submit">Finalizar compra</button>
+                        </div>
+                        <br>
+                        <p>Consultar o prazo e o valor do frete</p>
+                        <div class="input-group input-group">
+                            <input type="text" class="form-control" placeholder="00000-000" aria-label="Pesquisar"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-dark" type="button" id="Pesquisar">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>     
+    <footer class="border-top text-muted bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-3 col-lg-3  text-justify">
+                    Sobre <br><br>
+                    <a href="/views/quemsomos.html" class="text-decoration-none text-dark">
+                        XD Store
+                    </a><br>
+                    <a href="/views/termosdeuso.html" class="text-decoration-none text-dark">
+                        Termos de Uso
+                    </a><br>
+                    <a href="/views/privacidade.html" class="text-decoration-none text-dark">
+                        Politica de Privacidade
+                    </a><br>
+                    <a href="/views/troca.html" class="text-decoration-none text-dark">
+                        Trocas e Devoluções
+                    </a><br>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3  text-justify">
+                    Outros Sites <br><br>
+                    <a href="/curriculo web/index.html" class="text-decoration-none text-dark">
+                        Desenvolvedores
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        XD Pago
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        XD Envios
+                    </a> <br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        XD Shops
+                    </a> <br>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3  text-justify">
+                    Contato<br> <br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        Comprar
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        Vender
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        Solução de problemas
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        Segurança
+                    </a><br>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 text-justify">
+                    Redes sociais <br> <br>
+                    <a href="https://www.twitter.com/" class="text-decoration-none text-dark">
+                        Twitter
+                    </a><br>
+                    <a href="https://www.facebook.com/" class="text-decoration-none text-dark">
+                        Facebook
+                    </a><br>
+                    <a href="https://www.instagram.com/" class="text-decoration-none text-dark">
+                        Instagram
+                    </a><br>
+                    <a href="https://www.youtube.com/" class="text-decoration-none text-dark">
+                        YouTube
+                    </a><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"> </script>
+</body>
+
+</html>

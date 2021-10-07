@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>XD Store</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Importando os icones da guia (favicon)-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/src/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/src/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/src/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/src/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/src/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/src/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/src/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/src/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/rc/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!--CSS de baiano-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-3 mb-5 ">
+            <div class="container">
+                <a class="navbar-brand" href="/views/index.html">XD Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="/views/index.html">
+                                <button type="button" class="btn btn-dark" href="/views/index.html"> Home </button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Modal para contato -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#contatoModal"> Contato </button>
+                            <div class="modal fade" id="contatoModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Fale conosco </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="post">
+                                                <label>
+                                                    Digite seu nome:
+                                                </label>
+                                                <div class="mb-2-sm">
+                                                    <input type="text" class="form-control" id="nome">
+                                                </div>
+                                                <label>
+                                                    Digite seu e-mail:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <input type="email" class="form-control" id="email">
+                                                </div>
+                                                <label>
+                                                    CPF ou CNPJ:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <input type="text" class="form-control" id="email">
+                                                </div>
+                                                <label>
+                                                    Como podemos te ajudar:
+                                                </label>
+                                                <select class="form-select form-select mb-3">
+                                                    <option selected>Selecione uma opção</option>
+                                                    <option value="1">Cadastro</option>
+                                                    <option value="2">Cancelamento</option>
+                                                    <option value="3">Entrega</option>
+                                                    <option value="4">Paceiro XD</option>
+                                                    <option value="5">Quero de casamento</option>
+                                                </select>
+                                                <label>
+                                                    Digite sua mensagem:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <textarea class="form-control" id="mensagem" rows="5"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Nos ajude a entender o
+                                                        problema:</label>
+                                                    <input class="form-control" type="file" id="formFile" encru>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                            <button type="submit" class="btn btn-success">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="align-sel-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="cadastro.html">
+                                    <button type="button" class="btn btn-dark" href="/"> Cadastro </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html">
+                                    <button type="button" class="btn btn-dark" href="/"> Login </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="carrinho.html">
+                                    <button type="button" class="btn btn-dark bi-cart" href="/"></button>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <main>
+            <div class="container">
+                <h1>POLÍTICA DE PRIVACIDADE</h1>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non provident est similique! Itaque,
+                    nostrum consectetur. Nesciunt harum in, voluptas ad minima illo fugiat quasi modi dolores. Dolores
+                    doloremque laborum eaque?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi soluta, natus quibusdam nihil
+                    provident fugit, autem reiciendis pariatur dolor distinctio aliquam. Exercitationem laborum harum in
+                    incidunt optio possimus deserunt voluptas?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque repellat saepe eum nihil cum
+                    obcaecati, quidem nostrum accusantium error nulla, ad, deleniti aspernatur consequuntur quibusdam
+                    ducimus eligendi assumenda quaerat officia?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni adipisci accusamus
+                    expedita commodi atque blanditiis ducimus quidem. Unde eum quod reiciendis placeat? Distinctio
+                    provident dolor id, eveniet cumque placeat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi ratione aspernatur delectus
+                    sunt temporibus. Natus sunt qui quo amet eligendi totam id omnis adipisci placeat commodi. Maxime,
+                    ex odit!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil animi fugiat, nemo nisi illum ipsam
+                    incidunt quisquam quod facilis atque ratione eius, obcaecati id necessitatibus voluptate aliquid
+                    veniam deserunt vel.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique quaerat non consequuntur
+                    beatae impedit magni iusto unde. Consequuntur, doloribus aliquid. Quia illum obcaecati, eligendi
+                    impedit repellendus quisquam debitis doloremque!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptates reiciendis ratione eum
+                    nihil quibusdam ipsam beatae officia voluptatem culpa harum exercitationem fugiat, aspernatur
+                    placeat similique vitae aperiam numquam sit!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis mollitia, distinctio tempore qui
+                    blanditiis perferendis cumque eligendi modi! Provident, soluta dignissimos? Officiis, voluptates
+                    aliquid animi deleniti repellendus recusandae. Atque, voluptate!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque molestias delectus sunt
+                    tenetur autem assumenda iure culpa. Enim, libero reprehenderit minus accusantium natus nam eligendi
+                    magni molestiae veniam veritatis!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum molestiae eveniet doloribus
+                    doloremque sint adipisci facilis optio. Nisi, debitis. Cupiditate quo facilis hic numquam provident
+                    minus fuga veritatis omnis officiis.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ab dicta officiis hic, eveniet
+                    ipsam at nemo in natus distinctio saepe rerum esse exercitationem. Aliquid dolor quaerat eveniet
+                    inventore ratione.
+                </p>
+                <h3> Uso de Cookies </h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit esse consectetur, ullam,
+                    facere ducimus officiis aspernatur quia officia ad totam inventore cumque nam animi alias autem
+                    delectus ipsa in:
+                </p>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis similique
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis similique
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis similique
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis similique
+                    </li>
+                </ul>
+                <h3> Como utilizamos seus dados pessoais </h3>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Finalidade</th>
+                            <th scope="col">Base Legal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Lorem ipsum dolor sit amet lore</th>
+                            <td>consectetur adipisicing elit lore</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">Lorem ipsum dolor sit amet</th>
+                            <td>consectetur adipisicing elit.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lorem ipsum dolor sit amet</th>
+                            <td>consectetur adipisicing elit.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lorem ipsum dolor sit amet</th>
+                            <td>consectetur adipisicing elit.</td>
+                          </tr>
+                        <tr>
+                    </tbody>
+                </table>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi neque sapiente cupiditate nesciunt, enim pariatur vero totam eum deleniti hic 
+                    tempore rerum fugit temporibus ipsum vitae ratione architecto placeat ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores at ma
+                    gni molestiae, quia numquam nobis accusantium illum nostrum voluptates molestias nemo consectetur fugiat, porro sint vero, possimus sed nisi! Iu
+                    re? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil qui non ea reprehenderit, repellat tempore nemo facilis nisi? Commodi deserun
+                    t temporibus dignissimos nam necessitatibus ducimus tenetur autem pariatur harum? Dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Odio, magnam sequi laborum voluptatibus ratione nam accusamus voluptas consectetur officia distinctio dignissimos, mollitia ipsam placeat cul
+                    pa provident suscipit dolorum. Similique, odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nostrum, dignissimos deserunt volu
+                    ptatem quam dolore sapiente a dolorum velit ipsam consequuntur quod reprehenderit provident, quibusdam tempore! Ratione itaque earum hic! Lorem ipsum,
+                     dolor sit amet consectetur adipisicing elit. Consequuntur excepturi distinctio, corporis ratione beatae unde molestiae. Aut accusamus doloribus placea
+                     t beatae, nobis, ipsam nemo provident obcaecati maiores, ipsum odit quasi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rerum ali
+                     quam, incidunt deserunt quas minima veritatis non laudantium sunt, aliquid blanditiis! Consequatur cum deserunt vel eveniet illum, ex ratione? Est? Lo
+                     rem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rerum facere facilis id illum ad officia iste explicabo porro temporibus. Modi esse ex
+                      repudiandae animi accusantium eaque corporis perspiciatis dicta Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae suscipit deleniti, fugi
+                      at dolore facilis ullam velit, omnis vel placeat aut eligendi nobis tempora nihil rem minima illo porro sunt. Tempore? Lorem ipsum dolor sit amet consect
+                      etur adipisicing elit. Accusantium velit veritatis nulla repellat animi reiciendis. Nihil nam corporis totam voluptate officia doloribus ipsum quos rem ha
+                      rum. Eaque sapiente excepturi ex! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi omnis quas repellat voluptatum, ullam quaerat delectus te
+                      mporibus nobis, mollitia aliquid animi, quibusdam dolores. Dolorem commodi velit architecto at, neque sed. Lorem, ipsum dolor sit amet consectetur adipisic
+                      ing elit. Non odio aspernatur fuga, dolores voluptates similique nemo voluptatibus. Nesciunt praesentium neque ipsum earum accusantium? Harum tempore itaqu
+                      e quam! Error, necessitatibus quaerat?
+                </p>
+                <h3>É possivel revogar o consentimento fornecido anteriormente? </h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum similique, sapiente dolores harum in dolore non impedit dicta doloribus tempora, vero unde cum eligendi 
+                    exercitationem. At laborum quam assumenda ratione? Lorem ipsum dolor sit 
+                    amet consectetur adipisicing elit. Ut corrupti iusto nisi, doloremque excepturi officiis, nam sit reiciendis ratione consequatur odio impedit quasi fugit, atque 
+                    rerum rem iste? Suscipit, velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odit autem culpa provident nemo qui enim soluta voluptati
+                    bus atque deserunt eveniet animi expedita ducimus vitae facilis saepe, accusantium rem officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quam err
+                    or inventore at dolore laudantium iure autem exercitationem asperiores numquam? Aliquam quia libero nobis fuga corporis aperiam, quas quod facere! Lorem ipsum dolor si
+                    t amet consectetur adipisicing elit. Facilis esse quia numquam quam unde minima sequi, hic nemo? Vel porro consequuntur perspiciatis delectus! Nemo consequuntur aperiam i
+                    usto facere praesentium quibusdam!
+                </p>
+                <h3>Quem poderá acessar meus dados?</h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti impedit exercitationem distinctio. Maiores, ut vero possimus repudiandae 
+                    inventore reprehenderit beatae illum, nostrum id suscipit veritatis deleniti laudantium provident hic incidunt:
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                    <li>Lorem ipsum dolor</li>
+                    <li>Lorem ipsum dolor</li>
+                    <li>Lorem ipsum dolor</li>
+                    <li>Lorem ipsum dolor</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit natus asperiores consequuntur eius quae eos laudantium suscipit unde inventore hic s
+                    imilique ad veniam quas, impedit ipsum mollitia assumenda doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error quasi ipsa recusan
+                    dae. Ea totam quam dicta? Perferendis harum iste amet voluptatem inventore unde. Vel id aliquid consequatur delectus culpa laborum? Lorem ipsum dolor sit am
+                    et consectetur adipisicing elit. Maiores ipsam, nostrum quia aut optio mollitia distinctio amet, facere dolor nemo, modi ut sed porro dolores eligendi nulla cu
+                    mque. Natus, eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis sapiente minus earum reprehenderit saepe voluptatum maiores corporis. 
+                    Veritatis exercitationem quasi quo maiores veniam blanditiis explicabo sunt nobis perspiciatis deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Iste ipsum ab debitis 
+                    reprehenderit mollitia maiores et sapiente repellendus ducimus? Aspernatur vel itaque, accusamus adipisci ab deserunt perspiciatis qui voluptatum aliquid!
+                </p>
+
+            </div>
+        </main>
+        <!-- text-muted deixa o texto com uma aparencia "desbotada"-->
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-3 col-lg-3  text-justify">
+                        Sobre <br><br>
+                        <a href="/views/quemsomos.html" class="text-decoration-none text-dark">
+                            XD Store
+                        </a><br>
+                        <a href="/views/termosdeuso.html" class="text-decoration-none text-dark">
+                            Termos de Uso
+                        </a><br>
+                        <a href="/views/privacidade.html" class="text-decoration-none text-dark">
+                            Politica de Privacidade
+                        </a><br>
+                        <a href="/views/troca.html" class="text-decoration-none text-dark">
+                            Trocas e Devoluções
+                        </a><br>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3  text-justify">
+                        Outros Sites <br><br>
+                        <a href="/curriculo web/index.html" class="text-decoration-none text-dark">
+                            Desenvolvedores
+                        </a><br>
+                        <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                            XD Pago
+                        </a><br>
+                        <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                            XD Envios
+                        </a> <br>
+                        <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                            XD Shops
+                        </a> <br>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3  text-justify">
+                        Contato<br> <br>
+                        <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                            Comprar
+                        </a><br>
+                        <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                            Vender
+                        </a><br>
+                        <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                            Solução de problemas
+                        </a><br>
+                        <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                            Segurança
+                        </a><br>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 text-justify">
+                        Redes sociais <br> <br>
+                        <a href="https://www.twitter.com/" class="text-decoration-none text-dark">
+                            Twitter
+                        </a><br>
+                        <a href="https://www.facebook.com/" class="text-decoration-none text-dark">
+                            Facebook
+                        </a><br>
+                        <a href="https://www.instagram.com/" class="text-decoration-none text-dark">
+                            Instagram
+                        </a><br>
+                        <a href="https://www.youtube.com/" class="text-decoration-none text-dark">
+                            YouTube
+                        </a><br>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>XD Store :: Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Importando os icones da guia (favicon)-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/src/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/src/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/src/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/src/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/src/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/src/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/src/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/src/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/src/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/src/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!--CSS de baiano-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-3 mb-5 ">
+            <div class="container">
+                <a class="navbar-brand" href="/views/index.html">XD Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="/views/index.html">
+                                <button type="button" class="btn btn-dark" href="/views/index.html"> Home </button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Modal para contato -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#contatoModal"> Contato </button>
+                            <div class="modal fade" id="contatoModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Fale conosco </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="post">
+                                                <label>
+                                                    Digite seu nome:
+                                                </label>
+                                                <div class="mb-2-sm">
+                                                    <input type="text" class="form-control" id="nome">
+                                                </div>
+                                                <label>
+                                                    Digite seu e-mail:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <input type="email" class="form-control" id="email">
+                                                </div>
+                                                <label>
+                                                    CPF ou CNPJ:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <input type="text" class="form-control" id="email">
+                                                </div>
+                                                <label>
+                                                    Como podemos te ajudar:
+                                                </label>
+                                                <select class="form-select form-select mb-3">
+                                                    <option selected>Selecione uma opção</option>
+                                                    <option value="1">Cadastro</option>
+                                                    <option value="2">Cancelamento</option>
+                                                    <option value="3">Entrega</option>
+                                                    <option value="4">Paceiro XD</option>
+                                                    <option value="5">Quero de casamento</option>
+                                                </select>
+                                                <label>
+                                                    Digite sua mensagem:
+                                                </label>
+                                                <div class="mb-2">
+                                                    <textarea class="form-control" id="mensagem" rows="5"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Nos ajude a entender o
+                                                        problema:</label>
+                                                    <input class="form-control" type="file" id="formFile" encru>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                            <button type="submit" class="btn btn-success" method="post">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="align-sel-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="cadastro.html">
+                                    <button type="button" class="btn btn-dark" href="/view/cadstro.html"> Cadastro
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html">
+                                    <button type="button" class="btn btn-dark" href="/view/login.html"> Login </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/views/embreve.html">
+                                    <button type="button" class="btn btn-dark bi-cart" href="/"></button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div id="Banner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#Banner" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#Banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#Banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/src/imagens/banner 1.png" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/src/imagens/banner 2.png" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/src/imagens/banner 3.png" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#Banner" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Banner" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+    </header>
+    <main>
+        <div class="container" id="margem_t">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                        <div class="input-group input-group">
+                            <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-dark" type="button" id="Pesquisar">Pesquisar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <nav aria-label="Pagination">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div id="margem_d">
+                            <form class="d-inline-block">
+                                <select class="form-select ">
+                                    <option>Relevância</option>
+                                    <option>Mais vendidos</option>
+                                    <option>Lançamento</option>
+                                    <option>Menor preço</option>
+                                    <option>Maior preço</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div name="filtro" id="margem_d">
+                            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> Filtros <i
+                                    class="bi bi-funnel"></i></button>
+                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header  ">
+                                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Filtros</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <h6>Entrega</h6>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="chegaamanha">
+                                        <label class="form-check-label" for="chegaamanha">Chega
+                                            amanhã</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="fretefree">
+                                        <label class="form-check-label" for="fretefree">Frete
+                                            grátis</label>
+                                    </div>
+                                    <br>
+                                    <h6>Marca</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Apple">
+                                        <label class="form-check-label" for="Apple">
+                                            Apple
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Samsung">
+                                        <label class="form-check-label" for="Samsung">
+                                            Samsung
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Xiaomi">
+                                        <label class="form-check-label" for="Xiaomi">
+                                            Xiaomi
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Motorola">
+                                        <label class="form-check-label" for="Motorola">
+                                            Motorola
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Realme">
+                                        <label class="form-check-label" for="Realme">
+                                            Realme
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Huawai">
+                                        <label class="form-check-label" for="Huawai">
+                                            Huawai
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Google">
+                                        <label class="form-check-label" for="Google">
+                                            Google
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Oneplus">
+                                        <label class="form-check-label" for="Oneplus">
+                                            Oneplus
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Nokia">
+                                        <label class="form-check-label" for="Nokia">
+                                            Nokia
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Sony">
+                                        <label class="form-check-label" for="Sony">
+                                            Sony
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <h6>Cores</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Preto">
+                                        <label class="form-check-label" for="Preto">
+                                            Preto
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Azul">
+                                        <label class="form-check-label" for="Azul">
+                                            Azul
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Branco">
+                                        <label class="form-check-label" for="Branco">
+                                            Branco
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Dourado">
+                                        <label class="form-check-label" for="Dourado">
+                                            Dourado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Vermelho">
+                                        <label class="form-check-label" for="Vermelho">
+                                            Vermelho
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Prata">
+                                        <label class="form-check-label" for="Prata">
+                                            Prata
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Cinza">
+                                        <label class="form-check-label" for="Cinza">
+                                            Cinza
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Rosa">
+                                        <label class="form-check-label" for="Rosa">
+                                            Rosa
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Violeta">
+                                        <label class="form-check-label" for="Violeta">
+                                            Violeta
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Grafite">
+                                        <label class="form-check-label" for="Grafite">
+                                            Grafite
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <h6>Tamanho de tela</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="6.5">
+                                        <label class="form-check-label" for="6.5">
+                                            6.5"
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="6">
+                                        <label class="form-check-label" for="6">
+                                            6"
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="5.5">
+                                        <label class="form-check-label" for="5.5">
+                                            5.5"
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="5">
+                                        <label class="form-check-label" for="5">
+                                            5"
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <h6>Sistema operacional</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Android">
+                                        <label class="form-check-label" for="Android">
+                                            Android
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="iOS">
+                                        <label class="form-check-label" for="iOS">
+                                            iOS
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Android 11">
+                                        <label class="form-check-label" for="Android 11">
+                                            Android 11
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Android 10">
+                                        <label class="form-check-label" for="Android 10">
+                                            Android 10
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Android 9 Pie">
+                                        <label class="form-check-label" for="Android 9 Pie">
+                                            Android 9 Pie
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="Android 7.0 Nogaut">
+                                        <label class="form-check-label" for="Android 7.0 Nogaut">
+                                            Android 7.0 Nogaut
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="Android 6.0 Marshmallow">
+                                        <label class="form-check-label" for="Android 6.0 Marshmallow">
+                                            Android 6.0 Marshmallow
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="d-flex">
+                    <div class="card text-center branco">
+                        <a href="/views/iphone11.html" class="text-decoration-none text-dark"> <img
+                                src="/src/imagens/001.jpg" class="card-img-top branco">
+                            <div class="card-body branco">
+                                <h5 class="card-title">iPhone 11 </h5>
+                                <h6>R$5700,00</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center branco">
+                        <a href="/views/S20.html"> <img src="/src/imagens/002.jpg" class="card-img-top branco"> </a>
+                        <div class="card-body branco">
+                            <h5 class="card-title">Samsung Galaxy S20 FE</h5>
+                            <h6> R$ 4999,00</h6>
+                        </div>
+                    </div>
+                    <div class="card text-center branco">
+                        <a href="/views/A32.html" class="text-decoration-none text-dark"> <img
+                                src="/src/imagens/003.jpg" class="card-img-top branco">
+                            <div class="card-body branco">
+                                <h5 class="card-title">Samsung Galaxy A32 </h5>
+                                <h6>R$ 1999,00</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center branco ">
+                        <a href="/views/E7.html" class="text-decoration-none text-dark"> <img src="/src/imagens/004.jpg"
+                                class="card-img-top branco">
+                            <div class="card-body branco">
+                                <h5 class="card-title branco">Motorola Moto E7 </h5>
+                                <h6> R$1099,00</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center branco ">
+                        <a href="/views/M12.html" class="text-decoration-none text-dark"> <img
+                                src="/src/imagens/005.jpg" class="card-img-top branco">
+                            <div class="card-body branco">
+                                <h5 class="card-title branco">Samsung Galaxy M12</h5>
+                                <h6>R$1599,00</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex" id="margem_b">
+                    <div class="card text-center branco">
+                        <a href="/views/A02.html" class="text-decoration-none text-dark"> <img
+                                src="/src/imagens/006.jpg" class="card-img-top branco">
+                            <div class="card-body branco">
+                                <h5 class="card-title">Samsung Galaxy A02</h5>
+                                <h6> R$1099,00</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center branco">
+                        <a href="/views/motog10.html" class="text-decoration-none text-dark"> <img src="/src/imagens/007.jpg" class="card-img-top branco">
+                            <div class="card-body branco">
+                                <h5 class="card-title">Motorola Moto G10 </h5>
+                                <h6> R$1699,00</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center branco">
+                        <a href="/views/motog20.html" class="text-decoration-none text-dark"> <img src="/src/imagens/008.jpg" class="card-img-top branco">
+                            <div class="card-body branco">
+                                <h5 class="card-title">Motorola Moto G20 </h5>
+                                <h6>R$1699,00</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center branco">
+                        <a href="/views/motoe6i.html" class="text-decoration-none text-dark"> <img src="/src/imagens/009.jpg" class="card-img-top branco">
+                        <div class="card-body branco">
+                            <h5 class="card-title">Motorola Moto E6i </h5>
+                            <h6>R$1099,00</h6>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="card text-center branco ">
+                        <a href="/views/iphone12.html"class="text-decoration-none text-dark" ><img src="/src/imagens/010.jpg" class="card-img-top branco">
+                            <div class="card-body branco">
+                                <h5 class="card-title">iPhone 12</h5>
+                                <h6>R$8000,00</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- text-muted deixa o texto com uma aparencia "desbotada"-->
+    <footer class="border-top  bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-3 col-lg-3  text-justify">
+                    Sobre <br><br>
+                    <a href="/views/quemsomos.html" class="text-decoration-none text-dark">
+                        XD Store
+                    </a><br>
+                    <a href="/views/termosdeuso.html" class="text-decoration-none text-dark">
+                        Termos de Uso
+                    </a><br>
+                    <a href="/views/privacidade.html" class="text-decoration-none text-dark">
+                        Politica de Privacidade
+                    </a><br>
+                    <a href="/views/troca.html" class="text-decoration-none text-dark">
+                        Trocas e Devoluções
+                    </a><br>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3  text-justify">
+                    Outros Sites <br><br>
+                    <a href="/curriculo web/index.html" class="text-decoration-none text-dark">
+                        Desenvolvedores
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        XD Pago
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        XD Envios
+                    </a> <br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        XD Shops
+                    </a> <br>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3  text-justify">
+                    Contato<br> <br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        Comprar
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        Vender
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        Solução de problemas
+                    </a><br>
+                    <a href="/views/embreve.html" class="text-decoration-none text-dark">
+                        Segurança
+                    </a><br>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 text-justify">
+                    Redes sociais <br> <br>
+                    <a href="https://www.twitter.com/" class="text-decoration-none text-dark">
+                        Twitter
+                    </a><br>
+                    <a href="https://www.facebook.com/" class="text-decoration-none text-dark">
+                        Facebook
+                    </a><br>
+                    <a href="https://www.instagram.com/" class="text-decoration-none text-dark">
+                        Instagram
+                    </a><br>
+                    <a href="https://www.youtube.com/" class="text-decoration-none text-dark">
+                        YouTube
+                    </a><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"> </script>
+</body>
+
+</html>
